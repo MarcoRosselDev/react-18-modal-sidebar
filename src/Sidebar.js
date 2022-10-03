@@ -4,7 +4,21 @@ import { FaTimes } from "react-icons/fa";
 import { social, links } from "./data";
 
 const Sidebar = () => {
-  return <h2>sidebar</h2>;
+  return (
+    <aside className={`sidebar show-sidebar`}>
+      <div className="sidebar-header">
+        <img src={logo} alt="coding addict logo" className="logo" />
+        <button className="close-btn">
+          <FaTimes />
+        </button>
+      </div>
+      <ul className="links">
+        {links.map((link) => {
+          const { id, url, text, icon } = link;
+        })}
+      </ul>
+    </aside>
+  );
 };
 
 export default Sidebar;
