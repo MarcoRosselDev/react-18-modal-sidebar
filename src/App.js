@@ -1,11 +1,11 @@
 import React from "react";
 import Modal from "./Modal";
 import Sidebar from "./Sidebar";
-import Home from "./Home";
+import Hero from "./hero";
 function App() {
   return (
     <>
-      <Home />
+      <Hero />
       <Modal />
       <Sidebar />
     </>
